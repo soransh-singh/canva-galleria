@@ -10,6 +10,7 @@ export default function Canvas({sketch, ...props}){
     
     useEffect(() => {
         new p5(sketch, myRef.current);  
+    // eslint-disable-next-line
     }, []);
 
     return(
