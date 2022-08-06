@@ -1,0 +1,8 @@
+.gallery {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
