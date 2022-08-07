@@ -1,4 +1,10 @@
-canvas {
-    max-width: 400px !important;
+.canvas__container canvas {
+    width: min(100%, 300px) !important;
     height: auto !important;
+    display: block;
+}
+
+.canvas__container {
+    border: solid 4px red;
+    cursor: pointer;
 }

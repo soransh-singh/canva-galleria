@@ -14,7 +14,7 @@ export default function Canvas({sketch, ...props}){
     }, []);
 
     return(
-            <div>
+            <div className={`canvas__container gallery__item--${props.size}`}>
                 <div ref={myRef}></div>
             </div>
     )

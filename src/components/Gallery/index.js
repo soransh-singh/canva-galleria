@@ -1,11 +1,15 @@
-import sketch01 from "../../Sketches/sketch01.js";
+import { sketch } from "../../Sketches/sketch";
 import Canvas from "../Canvas";
 import "./style.css"
 
 export default function Gallery(){
     return(
         <div className="gallery">
-            <Canvas sketch={sketch01}/>
+            <Canvas sketch={sketch[0]} size="large"/>
+            <Canvas sketch={sketch[1]} size="small"/>
+            <Canvas sketch={sketch[1]} size="large"/>
+            <Canvas sketch={sketch[1]} size="medium"/>
+            <Canvas sketch={sketch[1]} size="small"/>
         </div>
     )
 }
