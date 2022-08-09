@@ -14,7 +14,9 @@ export default function Canvas({sketch, ...props}){
     }, []);
 
     return(
-            <div className={`canvas__container`}>
+            <div 
+                className={`canvas__container`} 
+                onClick={()=> props.changeCurrent(props.canvasId)}>
                 <div ref={myRef}></div>
             </div>
     )

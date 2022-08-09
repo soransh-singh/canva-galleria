@@ -3,7 +3,7 @@ export default function sketch(p){
     p.setup = () =>{
         p.colorMode(p.HSB);
         p.createCanvas(2400, 2400);
-        p.background(90, 70, 90);
+        p.background(0, 0, 100);
         p.frameRate(10)
         p.noStroke()
         i=0;
