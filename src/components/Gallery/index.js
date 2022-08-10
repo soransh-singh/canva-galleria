@@ -1,23 +1,35 @@
 import { useState } from "react";
-import { sketch } from "../../Sketches/sketch";
-import Canvas from "../Canvas";
+import { sketches } from "../../Sketches/sketch";
 import Viewer from "../Viewer";
 import "./style.css"
 
 export default function Gallery(){
+    /* 
+        to check sketch before adding  
+        just set current to required sketch
+        and then change it t0 -1 before commiting
+    */   
     const [current, setCurrent] = useState(-1);
+    const link = "https://raw.githubusercontent.com/soransh-singh/Container/main/galleria/"
+    const length = sketches.length
+
+    let galleryItem = []    
+    for(let i=0; i<length; i++){
+        galleryItem.push(
+            <div onClick={()=> setCurrent(i)} key={i}>
+                <img src={`${link}sketch${i+1}.png`} alt={`sketch${i}`} />
+            </div>
+        )
+    }
 
     return(
         <>
-        {current === -1?   
+        {current === -1?
+            
             <div className="gallery">
-                <Canvas 
-                    sketch={sketch[0]} 
-                    changeCurrent={setCurrent}
-                    canvasId={1} 
-                />
+                {galleryItem.map( item => item)}
             </div>:
-            <Viewer current={current} />
+            <Viewer sketch={sketches} current={current} changeCurrent={setCurrent}/>
         }
         </>
     )

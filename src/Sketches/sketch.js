@@ -3,7 +3,7 @@ import sketch02 from "./sketch02.js";
 import sketch03 from "./sketch03.js";
 import sketch04 from "./sketch04.js"
 
-export const sketch = [
+export const sketches = [
     sketch01,
     sketch02,
     sketch03,

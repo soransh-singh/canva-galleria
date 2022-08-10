@@ -1,7 +1,8 @@
 .canvas__container canvas {
-    width: min(100%, 300px) !important;
+    width: min(100%, 500px) !important;
     height: auto !important;
     display: block;
+    margin-inline: auto;
 }
 
 .canvas__container {

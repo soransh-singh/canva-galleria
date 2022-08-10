@@ -1,0 +1,7 @@
+.viewer {
+    position: absolute;
+    background-color: hsl(0 0% 24%/0.5);
+    border: solid 2px red;
+    top: 0;
+    min-height: 100%;
+}
