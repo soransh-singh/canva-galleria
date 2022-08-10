@@ -3,7 +3,19 @@ import "./style.css"
 
 export default function Viewer({current, sketch, ...props}){
     const handleClick = (action) =>{
-
+        switch(action) {
+            case "PREV":
+                props.changeCurrent(prevCurrent => prevCurrent-1)
+                break;
+            case "NEXT":
+                props.changeCurrent(prevCurrent => prevCurrent+1)
+                break;
+            case "EXIT":
+                props.changeCurrent(-1)
+                break;
+            default:
+                props.changeCurrent(-1)
+        }
     }
     return(
             <div className="viewer">
