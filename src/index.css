@@ -1,3 +1,7 @@
+:root {
+  --clr-primary: 49 98% 60%;
+}
+
 *,
 *::before,
 *::after {
@@ -23,6 +27,13 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Kalam', cursive;
 }
 
 img,

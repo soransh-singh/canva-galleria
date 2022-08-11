@@ -27,11 +27,12 @@ export default function sketch(p){
         points.forEach((data)=>{
             const {position, color} = data;
             p.fill(color)
-            p.circle(100 + position[0]*(p.width - 200) , 100 + position[1]*(p.height - 200), 100)
+            const [x,y] = position    
+            p.circle(100 + x*(p.width - 200) , 100 + y*(p.height - 200), 100)
         })
     }
-
+    
     p.draw = () =>{
-        
+        // empty
     }
 }

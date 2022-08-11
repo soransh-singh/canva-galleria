@@ -2,6 +2,30 @@
     position: absolute;
     background-color: hsl(0 0% 24%/0.5);
     border: solid 2px red;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: max(auto, 1rem);
+    margin-right: max(auto, 1rem); */
+    left: 1rem;
+    right: 1rem;
     top: 0;
-    min-height: 100%;
+    margin-top: 3rem;
+    background-color: hsl(0 0% 100%);
+    border: solid 1rem hsl(var(--clr-primary));
+    box-shadow: 4px 0 0.75rem hsl(0 0% 20%/0.35);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.viewer__button--close {
+    display: block;
+    margin-left: auto;
+    background-color: hsl(0 0% 100%);
+    border: solid 4px hsl(0 80% 45%);
+    color: hsl(0 80% 45%);
+    background-color: hsl(0 80% 75%/0.25);
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 4px;
 }

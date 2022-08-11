@@ -16,7 +16,7 @@ export default function Canvas({sketch, ...props}){
     }, [sketch]);
 
     return(
-            <div className={`canvas__container`}>
+            <div className="canvas__container">
                 <div ref={myRef}></div>
             </div>
     )

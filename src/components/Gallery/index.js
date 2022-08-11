@@ -16,7 +16,7 @@ export default function Gallery(){
     let galleryItem = []    
     for(let i=0; i<length; i++){
         galleryItem.push(
-            <div onClick={()=> setCurrent(i)} key={i}>
+            <div onClick={()=> setCurrent(i)} key={i} className="gallery__item">
                 <img src={`${link}sketch${i+1}.png`} alt={`sketch${i}`} />
             </div>
         )
@@ -26,9 +26,9 @@ export default function Gallery(){
         <>
         {current === -1?
             
-            <div className="gallery">
+            <main className="gallery">
                 {galleryItem.map( item => item)}
-            </div>:
+            </main>:
             <Viewer sketch={sketches} current={current} changeCurrent={setCurrent}/>
         }
         </>
