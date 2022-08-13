@@ -17,7 +17,7 @@ export default function Gallery(){
     for(let i=0; i<length; i++){
         galleryItem.push(
             <div onClick={()=> setCurrent(i)} key={i} className="gallery__item">
-                <img src={`${link}sketch${i+1}.png`} alt={`sketch${i}`} />
+                <img src={`${link}sketch${i+1}-min.png`} alt={`sketch${i}`} />
             </div>
         )
     }
