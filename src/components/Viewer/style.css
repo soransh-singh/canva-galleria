@@ -28,4 +28,14 @@
     font-weight: bolder;
     text-transform: capitalize;
     border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.viewer__button--close:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.viewer__button--close:active {
+    letter-spacing: 4px;
 }

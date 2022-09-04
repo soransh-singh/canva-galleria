@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import "./style.css"
 // import Canvas from "../Canvas";
-const LazyComponent = lazy((sketch)=> import("../Canvas"))
+const LazyCanvas = lazy((sketch)=> import("../Canvas"))
 
 export default function Viewer({current, sketch, ...props}){
     const handleClick = (action) =>{
@@ -23,7 +23,7 @@ export default function Viewer({current, sketch, ...props}){
             <div className="viewer">
                 <button onClick={()=> handleClick("EXIT")} className="viewer__button--close">close</button>
                 <Suspense fallback={<div>Loading...</div>}>
-                    <LazyComponent sketch={sketch}/>
+                    <LazyCanvas sketch={sketch}/>
                 </Suspense>
                 <h2>{current}</h2>
                 <button onClick={()=> handleClick("PREV")}>prev</button>

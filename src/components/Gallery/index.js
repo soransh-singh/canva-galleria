@@ -24,11 +24,11 @@ export default function Gallery(){
 
     return(
         <>
+        {current === -1?
             
             <main className="gallery">
                 {galleryItem.map( item => item)}
-            </main>
-        {current !== -1 &&
+            </main>:
             <Viewer sketch={sketches[current]} current={current} changeCurrent={setCurrent}/>
         }
         </>
